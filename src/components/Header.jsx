@@ -1,9 +1,11 @@
 import logo from "../assets/logo.png";
+import "../styles/Header.css"
+
 function Header() {
   return (
-    <div>
+    <div className="flex_head">
       <img src={logo} alt="Logo de Kasa" />
-      <ul>
+      <ul className="flex_nav">
         <li>Accueil</li>
         <li>A Propos</li>
       </ul>

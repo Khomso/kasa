@@ -1,0 +1,13 @@
+.flex_banner {
+    position: relative;
+    display: flex;
+    align-content: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+.absolute_position {
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    color:#ffffff;
+}
