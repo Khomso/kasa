@@ -1,0 +1,15 @@
+.head-card {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 55%;
+  color: white;
+  background-color: #ff6060;
+}
+.boby-card {
+  display: flex;
+  margin: auto;
+  width: 55%;
+  color: #ff6060;
+  background-color: #e5e5e5;
+}

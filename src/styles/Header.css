@@ -3,14 +3,19 @@
   justify-content: space-between;
   align-items: center;
 }
-
 .flex_nav {
   display: flex;
-  list-style-type: none;
   padding: 20px;
-  width: 10%;
+  width: 12%;
   justify-content: space-between;
-  color: #ff6060;
   font-weight: 500;
   font-size: 20px;
+}
+.nav_li {
+  list-style-type: none;
+  color: #ff6060;
+}
+
+a {
+  text-decoration: none;
 }

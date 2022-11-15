@@ -1,0 +1,13 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ff6060;
+}
+ .size-big{
+    font-size: 150px;
+}
+.size-medium {
+    font-size: 35px;
+}

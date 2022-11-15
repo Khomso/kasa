@@ -1,0 +1,7 @@
+.flex-centre {
+    display: flex;
+    justify-content: center;
+}
+ .img-radius {
+    border-radius: 20px;
+ }

@@ -1,5 +1,5 @@
 import { Slide } from "react-slideshow-image";
-import { accommodationSheet } from "../data/accommodation";
+import "react-slideshow-image/dist/styles.css";
 
 const properties = {
   duration: 5000,
@@ -9,23 +9,14 @@ const properties = {
   arrows: true,
 };
 
-const SlideShow = () => {
+const SlideShow = (props) => {
   return (
-    <Slide className="containerslide" {...properties}>
-      <div>
-        <ul>
-          {accommodationSheet.map((slide) => (
-            //   <div key={house.id}>
-            <div key={slide.id}>
-              <img
-                className="img_size"
-                src={slide.pictures}
-                alt="Piece de logement"
-              />
-            </div>
-          ))}
-        </ul>
-      </div>
+    <Slide className="slide-container" {...properties}>
+      {props.pictures.map((picture) => (
+        <div className="each-slide" key={picture}>
+          <img className="img_size" src={picture} alt="Piece de logement" />
+        </div>
+      ))}
     </Slide>
   );
 };
