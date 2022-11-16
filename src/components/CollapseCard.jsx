@@ -8,13 +8,13 @@ function CollapseCard(props) {
 
   return isOpen ? (
     <div>
-      <div className="head-card">
+      <div className="head-card" onClick={() => setIsOpen(false)}>
         <p>{props.title}</p>
         <div className="collapse-center">
           <img
             src={arrowOpen}
             alt="flèche vers le bas"
-            onClick={() => setIsOpen(false)}
+            
           ></img>
         </div>
       </div>
@@ -23,13 +23,13 @@ function CollapseCard(props) {
       </div>
     </div>
   ) : (
-    <div className="head-card">
+    <div className="head-card" onClick={() => setIsOpen(true)}>
       <p>{props.title}</p>
       <div className="collapse-center">
         <img
           src={arrowClose}
           alt="flèche vers le haut"
-          onClick={() => setIsOpen(true)}
+          
         ></img>
       </div>
     </div>

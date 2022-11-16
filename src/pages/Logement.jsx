@@ -9,20 +9,15 @@ import "../styles/Logement.css";
 
 const Logement = () => {
   const house = useLoaderData();
-  console.log(house);
-  // const slides = [];
-
-  // const containerStyles = {
-  //     with: "500px",
-  //     height: "280px",
-  //     margin : "0 auto",
-  // }
+  // const slides = [
+  //   <p>photo a mettre ici</p>
+  // ];
 
   return (
     <div>
-      {/* <div style={containerStyles}>
-              <ImageSlider slides= {slides} />  
-            </div> */}
+      {/* <div className="containerStyles">
+        <ImageSlider slides={slides} />
+      </div> */}
 
       {/* <SlideShow pictures={house.pictures} /> */}
       <div className="logement-flex">

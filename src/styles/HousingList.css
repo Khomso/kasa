@@ -16,12 +16,17 @@
   width: 350px;
   height: 350px;
   border-radius: 10px;
+  background: linear-gradient(to botom) ;
 }
 .card {
+  position: relative;
   width: 460px;
-  
 }
 
-p {
-  font-size: 12px;
+.title-in-img {
+  position: absolute;
+  color: white;
+  left: 10px;
+  bottom:20px;
+  font-size: 14px;
 }

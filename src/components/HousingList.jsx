@@ -10,7 +10,7 @@ function HousingList() {
           <div className="card" key={house.id}>
             <NavLink to={`/logement/${house.id}`}>
               <img className="img" src={house.cover} alt="logement" />
-              <p>{house.title}</p>
+              <p className="title-in-img">{house.title}</p>
             </NavLink>
           </div>
         ))}

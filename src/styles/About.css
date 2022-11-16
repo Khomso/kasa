@@ -1,0 +1,8 @@
+.collapse-about {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}

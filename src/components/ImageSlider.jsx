@@ -14,7 +14,7 @@ const ImageSlider = ({ slides }) => {
     height: "100%",
     borderRadius: "10px",
     backgroundSize: "cover",
-    backgroundImage: `{img.picture}`,
+    backgroundImage: `url(${slides[currentIndex].url})`,
   };
 
   const leftArrow = {
