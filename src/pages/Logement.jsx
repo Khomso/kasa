@@ -5,19 +5,16 @@ import RatingStar from "../components/RatingStar";
 import Tags from "../components/Tags";
 import "../styles/Logement.css";
 // import SlideShow from "../components/Slide";
-// import ImageSlider from "../components/ImageSlider";
+import ImageSlider from "../components/ImageSlider";
 
 const Logement = () => {
   const house = useLoaderData();
-  // const slides = [
-  //   <p>photo a mettre ici</p>
-  // ];
 
   return (
     <div>
-      {/* <div className="containerStyles">
-        <ImageSlider slides={slides} />
-      </div> */}
+      {/* <div className="containerStyles"> */}
+        <ImageSlider slides={house.pictures} />
+      {/* </div> */}
 
       {/* <SlideShow pictures={house.pictures} /> */}
       <div className="logement-flex">
