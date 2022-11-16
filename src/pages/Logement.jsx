@@ -1,6 +1,8 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import CollapseCard from "../components/CollapseCard";
+import RatingStar from "../components/RatingStar";
+import Tags from "../components/Tags";
 import "../styles/Logement.css";
 // import SlideShow from "../components/Slide";
 // import ImageSlider from "../components/ImageSlider";
@@ -28,7 +30,7 @@ const Logement = () => {
           <h1>{house.title}</h1>
           <p>{house.location}</p>
         </div>
-        <div className="logement-flex">
+        <div className="avatar-flex">
           <h2>{house.host.name}</h2>
           <img
             className="img-logement"
@@ -38,15 +40,16 @@ const Logement = () => {
         </div>
       </div>
       <div className="logement-flex">
-        <ul className="categories">
-            <li>{house.tags}</li>
-            <li>{house.tags}</li>
-        </ul>
-        <div>{house.rating}</div>
+        <Tags tags={house.tags} />
+        <RatingStar rating={house.rating} />
       </div>
       <div className="collapse-flex">
-        <CollapseCard className="logement-size" title="description" content={house.description} />
-        <CollapseCard className="logement-size" title="équipements" content={house.equipments} />
+        <div className="logement-size">
+          <CollapseCard title="Description" content={house.description} />
+        </div>
+        <div className="logement-size">
+          <CollapseCard title="Equipements" content={house.equipments} />
+        </div>
       </div>
     </div>
   );

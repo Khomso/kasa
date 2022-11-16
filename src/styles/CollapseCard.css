@@ -2,16 +2,20 @@
   display: flex;
   margin: auto;
   justify-content: space-between;
-  width: 55%;
+  width: 100%;
+  padding: 0px 10px;
   color: white;
   background-color: #ff6060;
+  border-radius: 5px;
 }
 .boby-card {
   display: flex;
   margin: auto;
-  width: 55%;
+  padding: 0px 10px;
+  width: 100%;
   color: #ff6060;
   background-color: #e5e5e5;
+  border-radius: 5px;
 }
 .collapse-center {
   display: flex;

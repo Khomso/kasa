@@ -11,3 +11,8 @@
 .size-medium {
     font-size: 35px;
 }
+.error-margin {
+    color: #ff6060;
+    border-bottom: 1px solid;
+    margin: 150px;
+}

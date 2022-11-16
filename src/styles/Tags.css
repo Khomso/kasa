@@ -1,0 +1,11 @@
+.categories {
+  display: flex;
+  list-style-type: none;
+  color: white;
+}
+.categories-border {
+  background-color: #ff6060;
+  border-radius: 15px;
+  padding: 5px;
+  gap:20px;
+}
