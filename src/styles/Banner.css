@@ -1,13 +1,18 @@
 .flex_banner {
-    position: relative;
-    display: flex;
-    align-content: center;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
+  position: relative;
+  display: flex;
+  align-content: center;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  border-radius: 30px;
 }
 .absolute_position {
-    position: absolute;
-    left: 35%;
-    top: 35%;
-    color:#ffffff;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  color: #ffffff;
+}
+.img-radius {
+  border-radius: 20px;
+ filter : brightness(70%);
 }
