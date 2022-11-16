@@ -1,0 +1,21 @@
+.logement-flex {
+  display: flex;
+  color: #ff6060;
+  justify-content: space-between;
+}
+.img-logement {
+  width: 100px;
+  height: 100px;
+  border-radius: 90px;
+}
+.categories {
+  border: 2px solid;
+}
+.collapse-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.logement-size {
+  width: 90%;
+  height: 100%;
+}

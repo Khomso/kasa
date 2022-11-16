@@ -1,27 +1,37 @@
 import { useState } from "react";
 import "../styles/CollapseCard.css";
+import arrowClose from "../assets/arrowClose.png";
+import arrowOpen from "../assets/arrowOpen.png";
 
-function CollapseCard() {
+function CollapseCard(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
     <div>
       <div className="head-card">
-        <p>Fiabilité</p>
-        <button onClick={() => setIsOpen(false)}>fermer</button>
+        <p>{props.title}</p>
+        <div className="collapse-center">
+          <img
+            src={arrowOpen}
+            alt="flèche vers le bas"
+            onClick={() => setIsOpen(false)}
+          ></img>
+        </div>
       </div>
       <div className="boby-card">
-        <p>
-          Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-          photos sont conformes aux logements, et toutes les information sont
-          régulièrement vérifiés par nos équipes.
-        </p>
+        <p>{props.content}</p>
       </div>
     </div>
   ) : (
     <div className="head-card">
-      <p>Fiabilité</p>
-      <button onClick={() => setIsOpen(true)}>Ouvrir</button>
+      <p>{props.title}</p>
+      <div className="collapse-center">
+        <img
+          src={arrowClose}
+          alt="flèche vers le haut"
+          onClick={() => setIsOpen(true)}
+        ></img>
+      </div>
     </div>
   );
 }
