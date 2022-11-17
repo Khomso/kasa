@@ -15,21 +15,23 @@ const Logement = () => {
 
       <div className="logement-flex">
         <div>
-          <h1>{house.title}</h1>
-          <p>{house.location}</p>
+          <div>
+            <h1>{house.title}</h1>
+            <p>{house.location}</p>
+          </div>
+          <Tags tags={house.tags} />
         </div>
-        <div className="avatar-flex">
-          <h2>{house.host.name}</h2>
-          <img
-            className="img-logement"
-            src={house.host.picture}
-            alt="Portrait de la personne"
-          />
+        <div className="media-responsive">
+          <div className="avatar-flex">
+            <h2>{house.host.name}</h2>
+            <img
+              className="img-logement"
+              src={house.host.picture}
+              alt="Portrait de la personne"
+            />
+          </div>
+          <RatingStar rating={house.rating} />
         </div>
-      </div>
-      <div className="logement-flex">
-        <Tags tags={house.tags} />
-        <RatingStar rating={house.rating} />
       </div>
       <div className="collapse-flex">
         <div className="logement-size">

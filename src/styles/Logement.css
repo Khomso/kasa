@@ -29,3 +29,29 @@ ul {
 li {
   list-style: none;
 }
+@media only screen and (max-width: 768px) {
+  .logement-flex {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .media-responsive {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .avatar-flex {
+    margin: 0;
+  }
+  .avatar-flex img {
+    width: 32px;
+    height: 32px;
+  }
+  .avatar-flex h2 {
+    font-size: 12px;
+  }
+  .collapse-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

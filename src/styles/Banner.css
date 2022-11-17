@@ -26,7 +26,7 @@
   .banner-title {
     justify-content: flex-start;
   }
-  h1 {
+  .media-title {
     text-align: left;
     margin-left: 20px;
   }

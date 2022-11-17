@@ -10,7 +10,7 @@ function Banner() {
       }}
     >
       <div className="banner-title">
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1 className="media-title">Chez vous, partout et ailleurs</h1>
       </div>
     </div>
   );

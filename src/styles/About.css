@@ -1,8 +1,16 @@
 .collapse-about {
-    width: 70%;
-    margin: auto;
-    margin-top: 50px;
-    display:flex;
-    flex-direction: column;
-    gap:20px;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+@media only screen and (max-width: 767px) {
+  .collapse-about {
+    width: 97.9%;
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+

@@ -7,3 +7,10 @@
   border-radius: 20px;
   filter: brightness(70%);
 }
+@media only screen and (max-width: 768px) {
+ .img-radius{
+  object-fit: cover;
+  height: 180px;
+ }
+}
+

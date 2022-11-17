@@ -1,6 +1,7 @@
 import React from "react";
 import redStar from "../assets/redStar.png";
 import silverStar from "../assets/silverStar.png";
+import "../styles/RatingStar.css";
 
 const Rating = (props) => {
     const stars = []
@@ -13,7 +14,7 @@ const Rating = (props) => {
       }
     }
     return (
-      <div>
+      <div className="rating-star">
         {stars}
       </div>
     )
