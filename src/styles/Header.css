@@ -19,5 +19,18 @@
 a {
   text-decoration: none;
 }
+.active-link {
+  border-bottom: 1px solid #ff6060;
+}
 
-
+@media only screen and (max-width: 767px) {
+  .flex_nav {
+    padding: 10px 0px;
+    font-size: 14px;
+    gap: 10px;
+  }
+  .media-logo {
+    width: 35%;
+    height: 35%;
+  }
+}

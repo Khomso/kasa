@@ -1,11 +1,17 @@
-import coastline from "../assets/coastline.png"
-import "../styles/Banner.css"
+import coastline from "../assets/coastline.png";
+import "../styles/Banner.css";
 
 function Banner() {
   return (
-    <div className="flex_banner">
-        <img className="img-radius" src={coastline} alt="Paysage de litoral"/>
-        <h1 className="absolute_position">Chez vous, partout et ailleurs</h1>
+    <div
+      className="flex_banner"
+      style={{
+        background: `url(${coastline}) center/cover no-repeat`,
+      }}
+    >
+      <div className="banner-title">
+        <h1>Chez vous, partout et ailleurs</h1>
+      </div>
     </div>
   );
 }

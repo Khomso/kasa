@@ -1,18 +1,33 @@
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #ff6060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ff6060;
 }
- .size-big{
-    font-size: 100px;
+.size-big {
+  font-size: 100px;
 }
 .size-medium {
-    font-size: 35px;
+  font-size: 35px;
 }
 .error-margin {
+  color: #ff6060;
+  border-bottom: 1px solid;
+  margin: 150px;
+}
+@media only screen and (max-width: 768px) {
+  .size-big {
+    margin: 0;
+  }
+  .size-medium {
+    text-align: center;
+    font-size: 15px;
+  }
+  .error-margin {
+    font-size: 12px;
     color: #ff6060;
     border-bottom: 1px solid;
-    margin: 150px;
+    margin: 100px 0px;
+  }
 }

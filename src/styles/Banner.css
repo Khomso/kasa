@@ -1,18 +1,44 @@
 .flex_banner {
   position: relative;
   display: flex;
-  align-content: center;
-  /* flex-wrap: wrap; */
-  flex-direction: column;
+  height: 500px;
   border-radius: 30px;
 }
-.absolute_position {
+.banner-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  left: 35%;
-  top: 35%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
   color: #ffffff;
+  background: rgba(147, 148, 148, 0.4);
 }
-.img-radius {
-  border-radius: 20px;
- filter : brightness(70%);
+
+@media only screen and (max-width: 768px) {
+  .flex_banner {
+    height: 200px;
+  }
+  .banner-title {
+    justify-content: flex-start;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 20px;
+  }
 }
+@media only screen and (max-width: 767px) {
+  .flex_banner {
+    height: 150px;
+  }
+  
+  h1 {
+    font-size: 26px;
+  }
+}
+
+

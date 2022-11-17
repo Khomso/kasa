@@ -1,32 +1,52 @@
-.flex {
+.flex-house {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border-radius: 20px;
 }
 .flex-centre {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  
 }
 .img {
   margin-top: 40px;
   width: 350px;
   height: 350px;
   border-radius: 10px;
-  filter: brightness(85%)
+  filter: brightness(85%);
 }
 .card {
   position: relative;
   width: 460px;
+  display: flex;
+  justify-content: center;
 }
 
 .title-in-img {
   position: absolute;
   color: white;
-  left: 10px;
-  bottom:20px;
+  left: 65px;
+  bottom: 20px;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-house {
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  .card {
+    width: 100%;
+    flex: 1;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  .title-in-img {
+    left: 20px;
+  }
 }

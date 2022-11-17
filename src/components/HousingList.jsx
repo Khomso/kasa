@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 
 function HousingList() {
   return (
-    <div className="flex-centre width">
-      <ul className="flex">
+    <div className="flex-centre">
+      <ul className="flex-house">
         {accommodationSheet.map((house) => (
           <div className="card" key={house.id}>
             <NavLink to={`/logement/${house.id}`}>

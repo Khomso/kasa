@@ -19,7 +19,7 @@ function CollapseCard(props) {
         </div>
       </div>
       <div className="boby-card">
-        <p>{props.content}</p>
+        {props.children}
       </div>
     </div>
   ) : (

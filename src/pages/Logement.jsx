@@ -33,10 +33,18 @@ const Logement = () => {
       </div>
       <div className="collapse-flex">
         <div className="logement-size">
-          <CollapseCard title="Description" content={house.description} />
+          <CollapseCard title="Description">
+            <p>{house.description}</p>
+          </CollapseCard>
         </div>
         <div className="logement-size">
-          <CollapseCard title="Equipements" content={house.equipments} />
+          <CollapseCard title="Equipements">
+            <ul>
+              {house.equipments.map((equipment) => (
+                <li key={equipment}>{equipment}</li>
+              ))}
+            </ul>
+          </CollapseCard>
         </div>
       </div>
     </div>

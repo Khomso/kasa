@@ -17,10 +17,18 @@ const About = () => {
     <div>
       <BannerMount />
       <div className="collapse-about">
-        <CollapseCard className="" title="Fiabilité" content={fiabilité} />
-        <CollapseCard title="Respect" content={respect} />
-        <CollapseCard title="Service" content={service} />
-        <CollapseCard title="Sécurité" content={sécurité} />
+        <CollapseCard title="Fiabilité">
+          <p>{fiabilité}</p>
+        </CollapseCard>
+        <CollapseCard title="Respect">
+          <p>{respect}</p>
+        </CollapseCard>
+        <CollapseCard title="Service">
+          <p>{service}</p>
+        </CollapseCard>
+        <CollapseCard title="Sécurité">
+          <p>{sécurité}</p>
+        </CollapseCard>
       </div>
     </div>
   );

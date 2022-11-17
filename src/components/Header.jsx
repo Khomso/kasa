@@ -3,15 +3,17 @@ import "../styles/Header.css";
 import { NavLink } from "react-router-dom";
 
 function Header() {
+  const getActiveClassName = ({ isActive }) =>
+    isActive ? "active-link nav_li" : "nav_li";
   return (
     <div className="flex_head">
-      <img src={logo} alt="Logo de Kasa" />
+      <img className="media-logo" src={logo} alt="Logo de Kasa" />
       <ul className="flex_nav">
-        <NavLink to="/">
-          <li className="nav_li">Accueil</li>
+        <NavLink className={getActiveClassName} to="/">
+          Accueil
         </NavLink>
-        <NavLink to="/about">
-          <li className="nav_li">A Propos</li>
+        <NavLink className={getActiveClassName} to="/about">
+          A Propos
         </NavLink>
       </ul>
     </div>
