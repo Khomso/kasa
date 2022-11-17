@@ -4,7 +4,6 @@ import CollapseCard from "../components/CollapseCard";
 import RatingStar from "../components/RatingStar";
 import Tags from "../components/Tags";
 import "../styles/Logement.css";
-// import SlideShow from "../components/Slide";
 import ImageSlider from "../components/ImageSlider";
 
 const Logement = () => {
@@ -12,11 +11,8 @@ const Logement = () => {
 
   return (
     <div>
-      {/* <div className="containerStyles"> */}
-        <ImageSlider slides={house.pictures} />
-      {/* </div> */}
+      <ImageSlider slides={house.pictures} />
 
-      {/* <SlideShow pictures={house.pictures} /> */}
       <div className="logement-flex">
         <div>
           <h1>{house.title}</h1>

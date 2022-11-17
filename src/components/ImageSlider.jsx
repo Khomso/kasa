@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../styles/ImageSlider.css"
+import arrowLeft from "../assets/arrowLeft.png";
+import arrowRight from "../assets/arrowRight.png";
+
 
 const ImageSlider = (props) => {
   const { slides } = props;
@@ -33,11 +36,11 @@ const ImageSlider = (props) => {
 
       }}
     >
-      <button className="prev" onClick={slidePrev}>
-        &lt;
+      <button className="prev" >
+        <img onClick={slidePrev} src={arrowLeft} alt="fleche pointant vers la gauche" />
       </button>
-      <button className="next" onClick={slideNext}>
-        &gt;
+      <button className="next" >
+      <img  onClick={slideNext} src={arrowRight} alt="fleche pointant vers la droite" />
       </button>
       <p className="count">
         {currentImageIndex + 1} / {slides.length}

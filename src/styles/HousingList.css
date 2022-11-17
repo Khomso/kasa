@@ -16,7 +16,7 @@
   width: 350px;
   height: 350px;
   border-radius: 10px;
-  background: linear-gradient(to botom) ;
+  filter: brightness(85%)
 }
 .card {
   position: relative;
