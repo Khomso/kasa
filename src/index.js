@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import ErrorPage from "./pages/Error-page";
+import ErrorPage from "./pages/Error-page-404";
 import About from "./pages/About";
 import Logement from "./pages/Logement";
 import Home from "./pages/Home";

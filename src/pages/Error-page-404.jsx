@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import "../styles/Error-page.css";
+import "../styles/Error-page-404.css";
 import "../styles/Layout.css";
 import { NavLink } from "react-router-dom";
 
