@@ -9,13 +9,7 @@ import ImageSlider from "../components/ImageSlider";
 
 const Logement = () => {
   const house = useLoaderData();
-  if (!house) {
-    throw new Response("", {
-      status: 404,
-      statusText: "Not Found",
-    });
-  }
-
+  
   return (
     <div>
       <ImageSlider slides={house.pictures} />
